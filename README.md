@@ -8,4 +8,4 @@ License : MIT License
 Contact : wa0k@mailo.com
 
 # Description
-This website has been realized in the context of a NSI project, the research about network has been done on Internet, on several website. I hope I didn't mistake.
+Ce site web a été réalisé dans le cadre d'un projet NSI, la recherche sur les réseaux a été faite sur interet, avec différents sites web. J'espère de ne pas avoir fait d'erreurs.
