@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Informatique : Les réseaux</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style_div.css">
+	<script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+	<script type="text/javascript" src="js/effect.js"></script>
+</head>
+<body>
+	<div class="background"></div>
+	<img class="heading" src="image/background.jpg">
+	<button class="button_nav_page" id="button_page1">
+  		<div id="underline"></div>Initiation aux réseaux</button>
+  	<button class="button_nav_page" id="button_page3">
+  		<div id="underline"></div>Les différentes topologies de réseaux</button>
+
+    <div class="container">
+		<h1>Types de réseaux informatiques</h1>
+		<p>Pour effectuer une classification, il faut préciser le critère de la classification. Il existe plusieurs critères de classification pour les réseaux téléinformatiques, on cite principalement: la taille en terme de nombre de machines, la vitesse de transfert des données ou débit, et l'étendue géographique.<br>
+		Les réseaux privés sont des réseaux appartenant à une même organisation. Il existe 5 catégories de réseaux selon les critères précédemment cités :</p>
+			<ul>
+				<li>PAN (Personal Area Network) pour un réseaux personnel</li>
+				<li>SAN (Storage Area Network) pour un réseau de stockage</li>
+				<li>LAN (Local Area Network) pour un réseaux local</li>
+				<li>MAN (Metropolitan Area Network) pour un réseaux métropolitain</li>
+				<li>WAN (Wide Area Network) pour un réseaux étendu</li>
+				<li>GAN (Global Area Network) pour un réseaux global</li>
+			</ul>
+		<p>La connexion physique qui relie ces types de réseaux peut être câblée (filaire) ou bien réalisée à l’aide d'une technologie sans fil.</p>
+
+		<button class="button_category" id="PAN">
+			Personal Area Network (PAN)<img src="image/arrow icon.png" class="arrow" id="arrow-3"></button>
+		<p id="category_pan">Pour permettre l'échange de données entre divers appareils, ces derniers peuvent être connectés à un réseau adapté. Il peut s'agir d'un PAN, on parle également de réseau domestique ou de réseau personnel.<br>
+		Les techniques de transmission courantes sont l'<a href="https://fr.wikipedia.org/wiki/Universal_Serial_Bus" target="_blank">USB</a> (Universal Serial Bus) ou le <a href="https://fr.wikipedia.org/wiki/FireWire" target="_blank">FireWire</a>. Le réseau personnel sans fil appelé WPAN (Wireless Personal Area Network) est basé sur des technologies sans fil tels que le <a href="https://fr.wikipedia.org/wiki/Bluetooth" target="_blank">Bluetooth</a>, l'USB sans fil ou <a href="https://fr.wikipedia.org/wiki/Wireless_USB" target="_blank">WUSB</a>, <a href="https://en.wikipedia.org/wiki/Insteon" target="_blank">Insteon</a>, <a href="https://fr.wikipedia.org/wiki/Infrared_Data_Association" target="_blank">IrDA</a>, <a href="https://fr.wikipedia.org/wiki/ZigBee" target="_blank">ZigBee</a> ou <a href="https://fr.wikipedia.org/wiki/Z-Wave" target="_blank">Z-WAVE</a>. Un réseau personnel sans fil qui peut être réalisé par l’intermédiaire du Bluetooth est appelé "Piconet". Les PAN et les WPAN ne couvrent généralement que quelques mètres et ne sont pas adaptés pour connecter des appareils se trouvant dans des pièces ou bâtiments différents.<br>
+		En raison de la portée limitée et d’un taux relativement faible de transfert de données, les PAN sont principalement utilisés pour relier des périphériques pour un usage récréatif. Les exemples typiques sont les écouteurs sans fil, les consoles de jeu et les appareils photo numériques. Dans le contexte de l’Internet des objets ("Internet of Things" en anglais), les WPAN sont utilisés pour la communication, le contrôle et la surveillance des applications à faible débit de données. Des protocoles sont spécifiquement conçus pour la domotique comme Insteon, Z-Wave et ZigBee précédemment cités.<br>
+		En plus de permettre la communication de plusieurs appareils entre eux, un réseau personnel permet également la connexion à d’autres réseaux, généralement plus grands.</p>
+
+		<button class="button_category" id="LAN">
+			Local Area Network (LAN)<img src="image/arrow icon.png" class="arrow" id="arrow-4"></button>
+		<p id="category_lan"><img class="left" src="image/LAN.png" alt="Shéma d'un LAN" width="280" height="246">Quand plus de deux ordinateurs doivent être réunis au sein d'un même réseau, cela se fait généralement sous la forme d’un LAN également appelé réseau local. Il s'agit d'un réseau sous sa forme la plus simple et la plus courante, ce type de réseau couvre une zone géographique relativement restreinte comme par exemple une salle informatique, une habitation, un bâtiment ou un site d'entreprise.<br>
+		La taille d'un réseau local varie de 2 jusqu'à 1000 utilisateurs environ, à condition que ceux-ci soient situés dans la même zone géographique. Lorsque le nombre d'utilisateurs devient élevé, des composants supplémentaires tels qu'un <a href="https://fr.wikipedia.org/wiki/Hub_Ethernet" target="_blank">Hub Ethernet</a>, un <a href="https://fr.wikipedia.org/wiki/Pont_(r%C3%A9seau)" target="_blank">Bridge</a> ou un <a href="https://fr.wikipedia.org/wiki/Commutateur_r%C3%A9seau" target="_blank">Switch</a> sont nécessaires. Ils agissent alors comme des éléments de couplage et des nœuds de distribution. Par rapport aux autres réseaux, un LAN est conçu pour permettre un transfert rapide de grandes quantités de données entre les machines : selon le moyen de transmission utilisé, le débit de donnée varie de 10 à 1000 Mbit/s environ.<br>
+		Lorsqu'un réseau local est implémenté par technologie sans fil, on le nomme WLAN (Wireless Local Area Network) pour réseau local sans fil. La portée d’un WLAN est tributaire de la norme utilisée et du support de transmission, pouvant être augmenté par un <a href="https://fr.wikipedia.org/wiki/R%C3%A9p%C3%A9teur" target="_blank">répéteur</a>.<br>
+		Plusieurs LAN à proximité géographique peuvent être reliés ensembles afin de former un MAN (Metropolitan Area Network) ou un WAN (Wide Area Network).</p>
+
+		<button class="button_category" id="MAN">
+			Metropolitan Area Network (MAN)<img src="image/arrow icon.png" class="arrow" id="arrow-5"></button>
+		<p id="category_man">Un MAN (ou réseau métropolitain) est un réseau de télécommunication à large bande qui relie plusieurs LAN géographiquement à proximité. Les routeurs de haute performance et les connexions de fibres optiques hautes performances qui sont utilisés permettent de fournir un débit de données beaucoup plus élevé que l’Ethernet (la vitesse de transmission entre deux nœuds éloignés est comparable à la communication dans un réseau local). Son infrastructure est assurée par les opérateurs de réseaux internationaux (voire locaux).<br>
+		Un réseau Métropolitain qui est implémenté par radio est appelé WMAN (Wireless Metropolitan Area Network) pour réseau Métropolitain sans fil. La technologie <a href="https://fr.wikipedia.org/wiki/WiMAX" target="_blank">WiMAX</a> (Worldwide Interoperability for Microwave Access) permet de connecter des abonnés au service mais dans une zone géographique plus large et avec un meilleur débit que le WiFi.</p>
+
+		<button class="button_category" id="WAN">
+			Wide Area Network (WAN)<img src="image/arrow icon.png" class="arrow" id="arrow-6"></button>
+		<p id="category_wan"><img class="left" src="image/WAN.png" alt="Shéma d'un WAN" width="300" height="250">Alors que les réseaux métropolitains relient des zones qui se trouvent proches les unes des autres dans des zones rurales ou urbaines, les WAN ou réseaux étendus couvrent des vastes zones géographiques à l’échelle d’un pays ou d’un continent par exemple. En principe, le nombre de réseaux locaux ou d’ordinateurs connectés à un réseau étendu est illimité.<br>
+		Alors que les LAN et MAN peuvent être réalisés en raison de la proximité géographique des ordinateurs connectés, les réseaux étendus utilisent des techniques comme <a href="https://fr.wikipedia.org/wiki/Multiprotocol_Label_Switching" target="_blank">IP/MPLS</a> (MultiProtocol Label Switching ), <a href="https://fr.wikipedia.org/wiki/Hi%C3%A9rarchie_num%C3%A9rique_pl%C3%A9siochrone" target="_blank">PDH</a> (Plesiochrone Digitale Hierarchie), <a href="https://fr.wikipedia.org/wiki/Hi%C3%A9rarchie_num%C3%A9rique_synchrone" target="_blank">SDH</a> (Synchrone Digitale Hierarchie), <a href="https://fr.wikipedia.org/wiki/Synchronous_Optical_Network" target="_blank">SONET</a> (Synchronous Optical Network), <a href="https://fr.wikipedia.org/wiki/Asynchronous_Transfer_Mode" target="_blank">ATM</a> (Asynchronous Transfer Mode)...<br>
+		Les réseaux étendus sont généralement détenus par une organisation ou une entreprise et sont donc exploités en privé ou loués. Ainsi, les fournisseurs de services Internet utilisent des WAN pour connecter les réseaux locaux d’entreprises et les clients à Internet.</p>
+
+		<button class="button_category" id="GAN">
+			Global Area Network (GAN)<img src="image/arrow icon.png" class="arrow" id="arrow-7"></button>
+		<p id="category_gan">Un réseau mondial comme Internet est aussi appelé GAN (Global Area Network). Internet n’est cependant pas le seul réseau informatique de ce type, les entreprises actives au niveau international maintiennent également des réseaux isolés qui couvrent plusieurs WAN et connectent ainsi des ordinateurs d’entreprise dans le monde entier. Les GAN utilisent la fibre optique des réseaux étendus et combinent ces derniers avec des câbles sous-marins internationaux ou des transmissions par satellite.</p>
+	</div>
+</body>
+</html>
